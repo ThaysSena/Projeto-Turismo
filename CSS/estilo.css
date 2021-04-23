@@ -1,0 +1,388 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.menu a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    float: left;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(171, 202, 250);
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    box-shadow: 0 6px 12px 0;
+}
+
+li a:hover{
+    color:white;
+    background-color:gray;
+}
+
+.menu.icon{
+    display: none;
+}
+
+.menu-ativo{
+    background-color:rgb(0, 117, 212);
+    color: white;
+}
+
+#banner{
+    width: 100%;
+    height: 600px;
+    float: left;
+    background: url(../img/banner\ caragua.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#conteudo{
+    width: 100%;
+    height: auto;/*após inserir o conteudo modificar para auto*/
+    float: left;
+}
+
+#centraliza-conteudo{
+    width: 80%;
+    height: auto;/*após inserir o conteudo modificar para auto*/
+    margin: 0 auto;
+}
+
+#cidade{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 15px;
+}
+
+#imagem-cidade{
+    width: 40%;
+    height: 600px;
+    float: left;
+}
+
+#texto-cidade{
+    width: 60%;
+    height: auto;
+    float: left;
+    padding: 10px;
+}
+
+#texto-cidade>p{
+    text-align: justify;
+}
+
+#pontos-turisticos{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card{
+    width: 31%;
+    height: auto;
+    float: left;
+    margin: 0 1%;
+    margin-top: 25px;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.4);
+}
+
+.card-imagem{
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+
+.card-texto{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    float: left;
+    padding: 0 10px;
+    overflow-y: scroll;
+}
+
+.card-imagem>img{
+    width: 100%;
+    height: 200px;
+}
+
+.card-texo>p{
+    text-align: justify;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:rgb(59, 59, 175); 
+  }
+
+  #pontos-turisticos>h2{
+      text-align: center;
+  }
+
+  #galeria{
+      width: 100%;
+      height: auto;
+      float: left;
+  }
+
+  #galeria>h2{
+      text-align: center;
+  }
+
+  .galeria-img{
+      width: 19.5%;
+      margin: 0 0.25%;
+      float: left;
+  }
+
+  .galeria-img>a>img{
+      width: 100%;
+      height: 120px;
+  }
+
+  footer{
+      margin-top: 50px;
+      width: 100%;
+      height: 600px;
+      float: left;
+  }
+
+  #mapa{
+      width: 100%;
+      height: auto;
+      float: left;
+      text-align: center;
+  }
+
+  #mapa>iframe{
+      width: 100%;
+      height: 430px;
+  }
+
+  .menu-direita{
+      float: right;
+  }
+
+  #mapa>h2{
+      text-align: center;
+  }
+
+  #mapa>p{
+      margin: 10px 0px;
+  }
+
+  #contato{
+      width: 100%;
+      height: 500px;
+      float: left;
+      margin-top: 50px;
+      text-align: center;
+  }
+
+  #telefone{
+    width: 33.3%;
+    height: 500px;
+    float: left;
+  }
+
+  #email{
+    width: 33.3%;
+    height: 500px;
+    float: left;
+
+  }
+
+  #redes-sociais{
+    width: 33.3%;
+    height: 500px;
+    float: left;
+  }
+
+  #contato>h2{
+    text-align: center;
+}
+
+#email>a{
+color: cornflowerblue;
+}
+
+#redes-sociais>a{
+    color: cornflowerblue;
+    }
+
+#email>a:hover{
+    color:red;
+}
+
+#redes-sociais>a:hover{
+    color:red;
+}
+
+#copy{
+    width: 100%;
+    height: 100px;
+    float: left;
+    text-align: center;
+}
+
+#whatsapp{
+position:fixed;
+width:60px;
+height:60px;
+bottom:40px;
+right:40px;
+background-color:#25d365a8;
+color:#FFF;
+border-radius:50px;
+text-align:center;
+font-size:30px;
+box-shadow: 1px 1px 2px #888;
+z-index:1000;
+
+}
+
+#whatsapp>a{
+    color: white;
+    text-decoration: none;
+}
+
+#whatsapp>a>i{
+    margin-top:16px
+}
+
+#qr-whats{
+    width: 40%;
+}
+
+/* Final do CSS Desktop */
+
+/* Inicio do CSS Mobile */
+
+@media only screen and (max-width: 600px) {
+    #centraliza-conteudo{
+        width: 95%;
+    }
+
+    #imagem-cidade{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    #imagem-cidade>img{
+        width: 60%;
+    }
+
+    #texto-cidade{
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card-texo{
+        min-height: initial;
+    }
+
+    .galeria-img{
+        width: 49.5%;
+    }
+
+    #telefone,#email,#redes-sociais{
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    #contato{
+        height: auto;
+    }
+
+    #whatsapp{
+        bottom: 10px;
+        right: 10px;
+    }
+    }
+    /* Inicio CSS - Menu Responsivo */
+
+    /* Esconde os itens do menu, exceto um elemento */
+    .menu ul>li:not(:first-child){
+        display: none;
+    }
+
+     /* Exibe o icone do menu na versão mobile, do lado direito */
+    .menu .icon{
+        float: right;
+        display: block;
+    }
+
+    .menu{
+        position: relative;
+
+    }
+
+    .menu .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .menu.responsive{
+        position: relative;
+    }
+
+    .menu.responsive .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu.responsive ul>li{
+        float: none;
+        width: 100%;
+        display: inline-block;
+    }
+    
+  /* Final CSS - Menu Responsivo */
+
+   
+
+    
+
+/* Final do CSS Mobile*/
